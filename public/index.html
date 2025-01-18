@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Coach AI 24*7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-img">
+        <img src="/images/stairway-to-heaven-amidst-cosmic-sky-glowing-staircase-ascending-fantastical-cloud-filled-surrounded-stars-338935600.jpg" alt="Positivity Header Image">
+    </header>
+    <div class="header">
+        <h1>Life Coach 24*7 Companion</h1>
+        <p class="tagline">Transform Your Life with Expert Guidance</p>
+    </div>
+
+    <button id="mode-toggle">☀️</button>
+
+    <div class="container">
+        <div class="form-container">
+            <input type="text" id="area-input" placeholder="Enter an area of life (e.g., Health, Career)">
+            <select id="priority-input">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <input type="number" id="time-input" placeholder="Daily time commitment (minutes, optional)">
+            <button id="add-area">Add Area</button>
+        </div>
+
+        <div id="goals-container"></div>
+
+        <button id="generate-habits">Generate Habits</button>
+
+        <div id="habits-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
