@@ -1,0 +1,19 @@
+{
+  "name": "life-coach-ai",
+  "version": "1.0.0",
+  "description": "AI-powered life coach application",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "keywords": ["life coach", "AI", "habits"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^3.39.4"
+  }
+}
+
