@@ -117,7 +117,7 @@ function displayHabits(habits) {
         if (areaObj) {
             habitsHTML += `
                 <div class="habit-area">
-                    <h3>${area}</h3>
+                    <h3>${area.toUpperCase()}</h3>
                     <ol class="habit-list">
                         ${areaHabits.map((habit, index) => `
                             <li>${habit}</li>
