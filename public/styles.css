@@ -167,6 +167,7 @@
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 10px;
+    font-weight: bold;
   }
   
   .habit-area h3 {
@@ -235,3 +236,92 @@
 .footer a:hover {
     text-decoration: none;
 }
+
+/* Responsive styles */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .header {
+    margin-top: 30vh;
+    padding: 1.5rem 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  #mode-toggle {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  input, select, button {
+    font-size: 0.9rem;
+  }
+
+  #generate-habits {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;
+  }
+
+  .goal-card h3 {
+    font-size: 1.2rem;
+  }
+
+  #habits-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .habit-area h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .header {
+    margin-top: 25vh;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  input, select, button {
+    font-size: 0.8rem;
+  }
+}
+

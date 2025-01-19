@@ -45,7 +45,7 @@ function updateGoalsUI() {
                        value="${goal}" 
                        oninput="updateGoal(${index}, ${goalIndex}, this.value)">
             `).join('')}
-            ${areaObj.goals.length < 2 ? `
+            ${areaObj.priority !== 'low' && areaObj.goals.length < 2 ? `
                 <button onclick="addGoal(${index})">Add Another Goal</button>
             ` : ''}
             ${areaObj.time ? `<p>Daily time commitment: ${areaObj.time} minutes</p>` : ''}
@@ -61,7 +61,7 @@ function updateGoal(areaIndex, goalIndex, value) {
 }
 
 function addGoal(areaIndex) {
-    if (areas[areaIndex].goals.length < 2) {
+    if (areas[areaIndex].priority !== 'low' && areas[areaIndex].goals.length < 2) {
         areas[areaIndex].goals.push('');
         updateGoalsUI();
     }
@@ -93,7 +93,7 @@ async function generateHabits() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ goals }),
+            body: JSON.stringify({ goals, timestamp: Date.now() }), // Add timestamp to ensure different results each time
         });
 
         if (!response.ok) {
@@ -117,7 +117,7 @@ function displayHabits(habits) {
         if (areaObj) {
             habitsHTML += `
                 <div class="habit-area">
-                    <h3>${area.toUpperCase()}</h3>
+                    <h3>${area.toUpperCase()} (${areaObj.priority.toUpperCase()} PRIORITY)</h3>
                     <ol class="habit-list">
                         ${areaHabits.map((habit, index) => `
                             <li>${habit}</li>
@@ -138,4 +138,3 @@ function displayHabits(habits) {
 
 // Initialize UI
 updateGoalsUI();
-
