@@ -7,7 +7,7 @@
     "start": "netlify dev"
   },
   "keywords": ["life coach", "AI", "habits"],
-  "author": "Your Name",
+  "author": "Divya Singh",
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.6.1"
