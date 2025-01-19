@@ -1,6 +1,6 @@
 # Life Coach AI 24x7
 
-Life Coach AI 24x7 is your personalized life coach , designed to help you set goals, and build habits tailored to your lifestyle goals. With a clean interface and AI-powered insights, it aims to inspire, motivate, and support your journey towards your personal growth and success.
+Life Coach AI 24x7 is your personal life coach , designed to help you set goals, and build habits tailored to your lifestyle goals. With a clean interface and AI-powered insights, it aims to inspire, motivate, and support your journey towards your personal growth and success.
 
 ---
 
@@ -35,7 +35,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Divya4879/life-coach-ai.git
+   git clone https://github.com/Divya4879/habits.git
    ```
 
 2. Navigate to the project directory:
@@ -98,7 +98,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ## Feedback
-We'd love to hear your thoughts and suggestions! Feel free to open an issue or reach out for support.
+I'd love to hear your thoughts and suggestions! Feel free to open an issue or reach out for support.
 
 ---
 
